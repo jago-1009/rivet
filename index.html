@@ -1,0 +1,2202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/rivet-core@2.9.0/css/rivet.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/rivet-stickers@0.3.1/dist/rivet-sticker-element.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/rivet-stickers@0.3.1/dist/rivet-stickers.js"
+    ></script>
+  </head>
+  <style>
+    .button {
+      background-color: white;
+      display: flex;
+      align-self: center;
+      width: fit-content;
+      padding: 4px 8px;
+      border-radius: 6px;
+      color: #990000;
+      font-weight: bold;
+      margin-bottom: 56px;
+      cursor: pointer;
+      transition-duration: 0.3s;
+      border: 2px solid white;
+    }
+    .button:hover {
+      background-color: #990000;
+      color: white;
+    }
+    .button-alt {
+      background-color: #990000 !important;
+      color: white !important;
+      border-color: #990000 !important;
+    }
+    .button-alt:hover {
+      background-color: white !important;
+      color: #990000 !important;
+    }
+  </style>
+  <body class="rvt-container">
+    <header class="rvt-header-wrapper rvt-c-header-wrapper">
+      <a class="rvt-header-wrapper__skip-link" href="#main-content"
+        >Skip to main content</a
+      >
+      <div class="rvt-header-global rvt-c-header-global">
+        <div class="rvt-c-container-3-xl">
+          <div class="rvt-header-global__inner rvt-c-header-global__inner">
+            <div
+              class="rvt-header-global__logo-slot rvt-c-header-global__logo-slot"
+            >
+              <a class="rvt-lockup rvt-c-lockup" href="/">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  height="40"
+                  viewBox="0 0 35 40"
+                  width="35"
+                >
+                  <g clip-path="url(#clip0_3197_32240)">
+                    <path d="M34.214 0H0V40H34.214V0Z" fill="#990000"></path>
+                    <path
+                      d="M20.9161 9.61895V11.7449H22.3855V23.5838H19.2757V7.9911H20.9286V5.86719H13.1708V7.9911H14.8257V23.5838H11.6805V11.7449H13.15V9.61895H5.85278V11.7449H7.50147V25.4535L10.184 28.1922H14.8257V31.352H13.1791V34.0888H20.9223V31.352H19.2757V28.1922H23.8821L26.5646 25.4535V11.7449H28.2174V9.61895H20.9161Z"
+                      fill="white"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3197_32240">
+                      <rect fill="white" height="40" width="34.214"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <div class="rvt-lockup__body rvt-c-lockup__body">
+                  <span class="rvt-lockup__title rvt-c-lockup__title"
+                    >Indiana University</span
+                  >
+                  <span class="rvt-lockup__subtitle rvt-c-lockup__subtitle"
+                    >Indianapolis</span
+                  >
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="rvt-header-global__controls rvt-c-header-global__controls"
+            >
+              <div class="rvt-hide-lg-down">
+                <nav aria-label="Main" class="rvt-c-main-nav">
+                  <ul class="rvt-header-menu__list">
+                    <li
+                      class="rvt-header-menu__item"
+                      data-nav-path="/academics/"
+                    >
+                      <div
+                        class="rvt-header-menu__dropdown rvt-dropdown"
+                        data-rvt-dropdown="primary-nav-1"
+                      >
+                        <div class="rvt-header-menu__group">
+                          <a
+                            class="rvt-header-menu__link rvt-text-medium rvt-ts-14"
+                            href="/academics/"
+                            >Academics</a
+                          >
+                          <button
+                            aria-expanded="false"
+                            class="rvt-dropdown__toggle rvt-header-menu__toggle"
+                            data-rvt-dropdown-toggle="primary-nav-1"
+                            aria-haspopup="true"
+                          >
+                            <span class="rvt-sr-only">More "Academics"</span>
+                            <svg
+                              class="rvt-global-toggle__open"
+                              fill="currentColor"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              width="16"
+                              focusable="false"
+                            >
+                              <path
+                                d="m15.146 6.263-1.292-1.526L8 9.69 2.146 4.737.854 6.263 8 12.31l7.146-6.047Z"
+                              ></path>
+                            </svg>
+                          </button>
+                        </div>
+                        <div
+                          class="rvt-header-menu__submenu rvt-dropdown__menu rvt-dropdown__menu--right"
+                          data-rvt-dropdown-menu="primary-nav-1"
+                          hidden=""
+                          id="rvt-9fhij1h3a0e2"
+                        >
+                          <ul class="rvt-header-menu__submenu-list">
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/academics/degrees-majors/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/academics/degrees-majors/"
+                                >Degrees and Majors</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/academics/schools/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/academics/schools/"
+                                >Schools</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/academics/classes-registration/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/academics/classes-registration/"
+                                >Classes and Registration</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/academics/hands-on-learning/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/academics/hands-on-learning/"
+                                >Hands-on Learning</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/academics/online"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/academics/online.html"
+                                >Online Programs and Classes</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/academics/calendars/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/academics/calendars/"
+                                >Academic Calendars</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/academics/records-grades/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/academics/records-grades/"
+                                >Student Records &amp; Grades</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/academics/policies/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/academics/policies/"
+                                >Policies</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li
+                      class="rvt-header-menu__item"
+                      data-nav-path="/admissions/"
+                    >
+                      <div
+                        class="rvt-header-menu__dropdown rvt-dropdown"
+                        data-rvt-dropdown="primary-nav-2"
+                      >
+                        <div class="rvt-header-menu__group">
+                          <a
+                            class="rvt-header-menu__link rvt-text-medium rvt-ts-14"
+                            href="/admissions/"
+                            >Admissions</a
+                          >
+                          <button
+                            aria-expanded="false"
+                            class="rvt-dropdown__toggle rvt-header-menu__toggle"
+                            data-rvt-dropdown-toggle="primary-nav-2"
+                            aria-haspopup="true"
+                          >
+                            <span class="rvt-sr-only">More "Admissions"</span>
+                            <svg
+                              class="rvt-global-toggle__open"
+                              fill="currentColor"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              width="16"
+                              focusable="false"
+                            >
+                              <path
+                                d="m15.146 6.263-1.292-1.526L8 9.69 2.146 4.737.854 6.263 8 12.31l7.146-6.047Z"
+                              ></path>
+                            </svg>
+                          </button>
+                        </div>
+                        <div
+                          class="rvt-header-menu__submenu rvt-dropdown__menu rvt-dropdown__menu--right"
+                          data-rvt-dropdown-menu="primary-nav-2"
+                          hidden=""
+                          id="rvt-f5jb73728742"
+                        >
+                          <ul class="rvt-header-menu__submenu-list">
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/admissions/apply/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/admissions/apply/"
+                                >How to Apply</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/admissions/visit/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/admissions/visit/"
+                                >Visit</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/admissions/request-info/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/admissions/request-info/"
+                                >Request Information</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/admissions/class-profile"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/admissions/class-profile.html"
+                                >Class Profile</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/admissions/meet-counselor/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/admissions/meet-counselor/"
+                                >Meet Your Counselor</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/admissions/after-admission/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/admissions/after-admission/"
+                                >After Admission</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/admissions/orientation/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/admissions/orientation/"
+                                >Orientation</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li
+                      class="rvt-header-menu__item"
+                      data-nav-path="/cost-aid/"
+                    >
+                      <div
+                        class="rvt-header-menu__dropdown rvt-dropdown"
+                        data-rvt-dropdown="primary-nav-3"
+                      >
+                        <div class="rvt-header-menu__group">
+                          <a
+                            class="rvt-header-menu__link rvt-text-medium rvt-ts-14"
+                            href="/cost-aid/"
+                            >Cost &amp; Financial Aid</a
+                          >
+                          <button
+                            aria-expanded="false"
+                            class="rvt-dropdown__toggle rvt-header-menu__toggle"
+                            data-rvt-dropdown-toggle="primary-nav-3"
+                            aria-haspopup="true"
+                          >
+                            <span class="rvt-sr-only"
+                              >More "Cost &amp; Financial Aid"</span
+                            >
+                            <svg
+                              class="rvt-global-toggle__open"
+                              fill="currentColor"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              width="16"
+                              focusable="false"
+                            >
+                              <path
+                                d="m15.146 6.263-1.292-1.526L8 9.69 2.146 4.737.854 6.263 8 12.31l7.146-6.047Z"
+                              ></path>
+                            </svg>
+                          </button>
+                        </div>
+                        <div
+                          class="rvt-header-menu__submenu rvt-dropdown__menu rvt-dropdown__menu--right"
+                          data-rvt-dropdown-menu="primary-nav-3"
+                          hidden=""
+                          id="rvt-c9i0h59b05bf"
+                        >
+                          <ul class="rvt-header-menu__submenu-list">
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/cost-aid/cost-of-attendance/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/cost-aid/cost-of-attendance/"
+                                >Cost of Attendance</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/cost-aid/financial-aid/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/cost-aid/financial-aid/"
+                                >Financial Aid</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/cost-aid/scholarships/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/cost-aid/scholarships/"
+                                >Scholarships</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/cost-aid/loans/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/cost-aid/loans/"
+                                >Loans</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/cost-aid/grants/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/cost-aid/grants/"
+                                >Grants</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/cost-aid/additional-funding"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/cost-aid/additional-funding.html"
+                                >Additional Funding Options</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/cost-aid/work-study/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/cost-aid/work-study/"
+                                >Work-Study</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/cost-aid/bill-pay/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/cost-aid/bill-pay/"
+                                >Bill Pay</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li
+                      class="rvt-header-menu__item rvt-header-menu__item--current"
+                      data-nav-path="/research/"
+                    >
+                      <div
+                        class="rvt-header-menu__dropdown rvt-dropdown"
+                        data-rvt-dropdown="primary-nav-4"
+                      >
+                        <div class="rvt-header-menu__group">
+                          <a
+                            class="rvt-header-menu__link rvt-text-medium rvt-ts-14"
+                            href="/research/"
+                            aria-current="page"
+                            >Research</a
+                          >
+                          <button
+                            aria-expanded="false"
+                            class="rvt-dropdown__toggle rvt-header-menu__toggle"
+                            data-rvt-dropdown-toggle="primary-nav-4"
+                            aria-haspopup="true"
+                          >
+                            <span class="rvt-sr-only">More "Research"</span>
+                            <svg
+                              class="rvt-global-toggle__open"
+                              fill="currentColor"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              width="16"
+                              focusable="false"
+                            >
+                              <path
+                                d="m15.146 6.263-1.292-1.526L8 9.69 2.146 4.737.854 6.263 8 12.31l7.146-6.047Z"
+                              ></path>
+                            </svg>
+                          </button>
+                        </div>
+                        <div
+                          class="rvt-header-menu__submenu rvt-dropdown__menu rvt-dropdown__menu--right"
+                          data-rvt-dropdown-menu="primary-nav-4"
+                          hidden=""
+                          id="rvt-dgi0deij2b97"
+                        >
+                          <ul class="rvt-header-menu__submenu-list">
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/research/participate/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/research/participate/"
+                                >Participate in Research</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/research/initiatives/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/research/initiatives/"
+                                >Research Initiatives</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/research/centers-institutes/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/research/centers-institutes/"
+                                >Centers &amp; Institutes</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/research/partner/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/research/partner/"
+                                >Partner with IU Indianapolis</a
+                              >
+                            </li>
+                            <li
+                              class="rvt-header-menu__submenu-item"
+                              data-subnav-path="/research/faculty/"
+                            >
+                              <a
+                                class="rvt-header-menu__submenu-link"
+                                href="/research/faculty/"
+                                >IU Indianapolis Faculty</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div>
+                <button
+                  aria-expanded="false"
+                  class="rvt-global-toggle rvt-global-toggle--menu rvt-c-global-toggle--menu rvt-hide-lg-up"
+                  data-rvt-dialog-trigger="mobile-menu"
+                  hidden=""
+                >
+                  <span class="rvt-sr-only">Menu</span>
+                  <svg
+                    class="rvt-global-toggle__open"
+                    fill="currentColor"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    width="16"
+                  >
+                    <path
+                      d="M15 4H1V2h14v2Zm0 5H1V7h14v2ZM1 14h14v-2H1v2Z"
+                    ></path></svg
+                  ><svg
+                    class="rvt-global-toggle__close"
+                    fill="currentColor"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    width="16"
+                  >
+                    <path
+                      d="m3.5 2.086 4.5 4.5 4.5-4.5L13.914 3.5 9.414 8l4.5 4.5-1.414 1.414-4.5-4.5-4.5 4.5L2.086 12.5l4.5-4.5-4.5-4.5L3.5 2.086Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div
+                class="rvt-self-start rvt-flex rvt-items-center rvt-c-full-height"
+                data-rvt-close-click-outside=""
+              >
+                <button
+                  aria-expanded="false"
+                  class="rvt-global-toggle rvt-c-global-toggle rvt-c-global-toggle__search-container rvt-m-left-md-lg-up"
+                  data-rvt-dialog-trigger="search"
+                >
+                  <span class="rvt-sr-only">Search</span>
+                  <!-- Magnifying glass icon -->
+                  <svg
+                    class="rvt-global-toggle__search rvt-c-global-toggle__search rvt-c-global-toggle__search-closed"
+                    fill="currentColor"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a5 5 0 1 0 0 10A5 5 0 0 0 7 2ZM0 7a7 7 0 1 1 12.606 4.192l3.101 3.1-1.414 1.415-3.1-3.1A7 7 0 0 1 0 7Z"
+                    ></path>
+                  </svg>
+                  <!-- Close icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="rvt-global-toggle__search rvt-c-global-toggle__search rvt-c-global-toggle__search-open"
+                    fill="none"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    width="16"
+                  >
+                    <path
+                      d="M3.50015 2.58582L8.00015 7.08582L12.5002 2.58582L13.9144 4.00003L9.41436 8.50003L13.9144 13L12.5002 14.4142L8.00015 9.91424L3.50015 14.4142L2.08594 13L6.58594 8.50003L2.08594 4.00003L3.50015 2.58582Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div>
+                <button
+                  aria-expanded="false"
+                  class="rvt-global-toggle rvt-global-toggle--menu rvt-c-global-toggle--menu rvt-hide-lg-down"
+                  data-rvt-dialog-trigger="spotlight-menu"
+                >
+                  <span class="rvt-sr-only">Menu</span>
+                  <svg
+                    class="rvt-c-spotlight-menu--closed"
+                    fill="currentColor"
+                    focusable="false"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    width="16"
+                  >
+                    <path
+                      d="M15 4H1V2h14v2Zm0 5H1V7h14v2ZM1 14h14v-2H1v2Z"
+                    ></path>
+                  </svg>
+
+                  <!-- Close icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="rvt-c-spotlight-menu--open"
+                    fill="none"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    width="16"
+                  >
+                    <path
+                      d="M3.50015 2.58582L8.00015 7.08582L12.5002 2.58582L13.9144 4.00003L9.41436 8.50003L13.9144 13L12.5002 14.4142L8.00015 9.91424L3.50015 14.4142L2.08594 13L6.58594 8.50003L2.08594 4.00003L3.50015 2.58582Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rvt-header-local rvt-c-header-local rvt-hide-lg-down">
+        <div
+          class="rvt-c-container-3-xl rvt-flex rvt-items-center rvt-p-top-xs rvt-p-bottom-xs"
+        >
+          <div class="rvt-header-local__inner rvt-c-header-local__inner">
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="academics/degrees-majors"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/academics/degrees-majors/"
+                >Degrees and Majors</a
+              >
+              <nav
+                aria-label="Degrees and Majors"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/academics/degrees-majors/interest/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/academics/degrees-majors/interest/"
+                      >Undergraduate Majors by Interest</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/academics/degrees-majors/graduate-interest/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/academics/degrees-majors/graduate-interest/"
+                      >Graduate Majors by Interest</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="academics/schools"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/academics/schools/"
+                >Schools</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="academics/classes-registration"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/academics/classes-registration/"
+                >Classes and Registration</a
+              >
+              <nav
+                aria-label="Classes and Registration"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/academics/classes-registration/schedule-classes/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/academics/classes-registration/schedule-classes/"
+                      >Schedule of Classes</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/academics/classes-registration/register/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/academics/classes-registration/register/"
+                      >Register for Classes</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="academics/hands-on-learning"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/academics/hands-on-learning/"
+                >Hands-on Learning</a
+              >
+              <nav
+                aria-label="Hands-on Learning"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/academics/hands-on-learning/study-abroad"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/academics/hands-on-learning/study-abroad.html"
+                      >Study Abroad</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/academics/hands-on-learning/study-away"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/academics/hands-on-learning/study-away.html"
+                      >Study Away</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="academics/calendars"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/academics/calendars/"
+                >Academic Calendars</a
+              >
+              <nav
+                aria-label="Academic Calendars"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/academics/calendars/academic-calendar/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/academics/calendars/academic-calendar/"
+                      >Official Academic Calendar</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/academics/calendars/long-term"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/academics/calendars/long-term.html"
+                      >Long-Term Calendar</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/academics/calendars/final-exam/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/academics/calendars/final-exam/"
+                      >Final Exam Schedule</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/academics/calendars/career"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/academics/calendars/career.html"
+                      >Dental, Medical, Law, Quarterly Calendar</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="academics/records-grades"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/academics/records-grades/"
+                >Student Records &amp; Grades</a
+              >
+              <nav
+                aria-label="Student Records &amp; Grades"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/academics/records-grades/personal-info/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/academics/records-grades/personal-info/"
+                      >Personal Info</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/academics/records-grades/enrollment-verification"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/academics/records-grades/enrollment-verification.html"
+                      >Verify Enrollment or Degree</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/academics/records-grades/request-records"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/academics/records-grades/request-records.html"
+                      >Request Records</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/academics/records-grades/your-major/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/academics/records-grades/your-major/"
+                      >Your Plan of Study</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/academics/records-grades/grades/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/academics/records-grades/grades/"
+                      >Grades</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/academics/records-grades/graduation/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/academics/records-grades/graduation/"
+                      >Graduation</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="academics/policies"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/academics/policies/"
+                >Policies</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="admissions/apply"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/admissions/apply/"
+                >How to Apply</a
+              >
+              <nav
+                aria-label="How to Apply"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/admissions/apply/steps-to-apply"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/admissions/apply/steps-to-apply.html"
+                      >Steps to Apply</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/admissions/apply/dates/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/admissions/apply/dates/"
+                      >Dates and Deadlines</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="admissions/visit"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/admissions/visit/"
+                >Visit</a
+              >
+              <nav aria-label="Visit" class="rvt-header-menu rvt-c-header-menu">
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/admissions/visit/virtual-tour/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/admissions/visit/virtual-tour/"
+                      >Virtual Tour</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/admissions/visit/graduate-tours"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/admissions/visit/graduate-tours.html"
+                      >Graduate Student Tours</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/admissions/visit/group-visits"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/admissions/visit/group-visits.html"
+                      >Group Visits</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/admissions/visit/plan-visit"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/admissions/visit/plan-visit.html"
+                      >Plan Your Visit</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="admissions/request-info"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/admissions/request-info/"
+                >Request Information</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="admissions/meet-counselor"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/admissions/meet-counselor/"
+                >Meet Your Counselor</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="admissions/after-admission"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/admissions/after-admission/"
+                >After Admission</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="admissions/orientation"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/admissions/orientation/"
+                >Orientation</a
+              >
+              <nav
+                aria-label="Orientation"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/admissions/orientation/orientation-steps"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/admissions/orientation/orientation-steps.html"
+                      >Orientation Steps</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/admissions/orientation/placement-tests"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/admissions/orientation/placement-tests.html"
+                      >Placement Tests</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="cost-aid/cost-of-attendance"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/cost-aid/cost-of-attendance/"
+                >Cost of Attendance</a
+              >
+              <nav
+                aria-label="Cost of Attendance"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/cost-of-attendance/net-price-calculator"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/cost-of-attendance/net-price-calculator.html"
+                      >Net Price Calculator</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/cost-of-attendance/reduced-tuition"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/cost-of-attendance/reduced-tuition.html"
+                      >Reduced Tuition for Out of State Students</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="cost-aid/financial-aid"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/cost-aid/financial-aid/"
+                >Financial Aid</a
+              >
+              <nav
+                aria-label="Financial Aid"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/financial-aid/apply/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/financial-aid/apply/"
+                      >Apply for Financial Aid</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/financial-aid/accept-aid/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/financial-aid/accept-aid/"
+                      >Accept Your Aid</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/financial-aid/manage-aid/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/financial-aid/manage-aid/"
+                      >Manage Your Aid</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="cost-aid/scholarships"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/cost-aid/scholarships/"
+                >Scholarships</a
+              >
+              <nav
+                aria-label="Scholarships"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/scholarships/apply/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/scholarships/apply/"
+                      >Apply for Scholarships</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/scholarships/renew/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/scholarships/renew/"
+                      >Renew Your Scholarship</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/scholarships/manage-external"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/scholarships/manage-external.html"
+                      >Manage External Scholarships</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="cost-aid/loans"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/cost-aid/loans/"
+                >Loans</a
+              >
+              <nav aria-label="Loans" class="rvt-header-menu rvt-c-header-menu">
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/loans/federal-loans/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/loans/federal-loans/"
+                      >Federal Loans</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/loans/health-profession"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/loans/health-profession.html"
+                      >Health Professions Loans</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/loans/private"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/loans/private.html"
+                      >Private Loans</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/loans/short-term"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/loans/short-term.html"
+                      >Short-Term Loans</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="cost-aid/grants"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/cost-aid/grants/"
+                >Grants</a
+              >
+              <nav
+                aria-label="Grants"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/grants/iu-indianapolis-pledge"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/grants/iu-indianapolis-pledge.html"
+                      >IU Indianapolis Pledge</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/grants/federal-pell"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/grants/federal-pell.html"
+                      >Federal Pell</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/grants/federal-supplemental"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/grants/federal-supplemental.html"
+                      >Federal Supplemental</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/grants/frank-obannon"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/grants/frank-obannon.html"
+                      >Frank O’Bannon</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/grants/child-disabled-veteran"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/grants/child-disabled-veteran.html"
+                      >Child of Disabled Veteran</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/grants/national-guard"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/grants/national-guard.html"
+                      >National Guard Supplemental</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="cost-aid/work-study"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/cost-aid/work-study/"
+                >Work-Study</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="cost-aid/bill-pay"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/cost-aid/bill-pay/"
+                >Bill Pay</a
+              >
+              <nav
+                aria-label="Bill Pay"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/bill-pay/pay-bill/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/bill-pay/pay-bill/"
+                      >Pay Your Bill</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/bill-pay/deposits-prepayments"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/bill-pay/deposits-prepayments.html"
+                      >Deposits and Prepayments</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/bill-pay/receive-refund/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/bill-pay/receive-refund/"
+                      >Receive Your Refund</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/bill-pay/tax-info/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/bill-pay/tax-info/"
+                      >Tax Information</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/cost-aid/bill-pay/tuition-disputes/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/cost-aid/bill-pay/tuition-disputes/"
+                      >Tuition Disputes</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="research/participate"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/research/participate/"
+                >Participate in Research</a
+              >
+              <nav
+                aria-label="Participate in Research"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/research/participate/undergraduate"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/research/participate/undergraduate.html"
+                      >Opportunities for Undergraduate Students</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/research/participate/graduate"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/research/participate/graduate.html"
+                      >Opportunities for Graduate Students</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/research/participate/volunteer"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/research/participate/volunteer.html"
+                      >Volunteer for a Research Study</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="research/initiatives"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/research/initiatives/"
+                >Research Initiatives</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="research/centers-institutes"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/research/centers-institutes/"
+                >Centers &amp; Institutes</a
+              >
+              <nav
+                aria-label="Centers &amp; Institutes"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/research/centers-institutes/institute-health-wellbeing/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/research/centers-institutes/institute-health-wellbeing/"
+                      >Institute for Human Health &amp; Wellbeing</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="research/partner"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/research/partner/"
+                >Partner with IU Indianapolis</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="research/faculty"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/research/faculty/"
+                >IU Indianapolis Faculty</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="student-support/academic-advising"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/student-support/academic-advising/"
+                >Academic Advising</a
+              >
+              <nav
+                aria-label="Academic Advising"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/student-support/academic-advising/schedule-appointment"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/student-support/academic-advising/schedule-appointment.html"
+                      >Schedule an Appointment</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="student-support/academic-support"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/student-support/academic-support/"
+                >Academic Support and Tutoring</a
+              >
+              <nav
+                aria-label="Academic Support and Tutoring"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/student-support/academic-support/libraries"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/student-support/academic-support/libraries.html"
+                      >Libraries</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/student-support/academic-support/groups-scholars/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/student-support/academic-support/groups-scholars/"
+                      >Groups Scholars Program</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="student-support/career-services-jobs"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/student-support/career-services-jobs/"
+                >Career Services and Jobs</a
+              >
+              <nav
+                aria-label="Career Services and Jobs"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/student-support/career-services-jobs/explore-careers"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/student-support/career-services-jobs/explore-careers.html"
+                      >Explore Careers</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/student-support/career-services-jobs/fall-career-week/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/student-support/career-services-jobs/fall-career-week/"
+                      >Fall Career Week</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="student-support/health-wellness"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/student-support/health-wellness/"
+                >Health and Wellness</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="student-support/diversity-inclusion"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/student-support/diversity-inclusion/"
+                >Diversity and Inclusion</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="student-support/technology-tools"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/student-support/technology-tools/"
+                >Technology and Tools</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="student-support/recruit-students"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/student-support/recruit-students/"
+                >Recruit IU Indy Students</a
+              >
+              <nav
+                aria-label="Recruit IU Indy Students"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/student-support/recruit-students/career-event"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/student-support/recruit-students/career-event.html"
+                      >IU Indy Career Events</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="campus-life/athletics-recreation"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/campus-life/athletics-recreation/"
+                >Athletics and Recreation</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="campus-life/student-organizations"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/campus-life/student-organizations/"
+                >Student Organizations</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="campus-life/events"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/campus-life/events/"
+                >Events</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="campus-life/housing"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/campus-life/housing/"
+                >Housing</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="campus-life/dining"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/campus-life/dining/"
+                >Dining</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="about/iupui-transition"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/about/iupui-transition/"
+                >IUPUI Transition to IU Indianapolis</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="about/leadership"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/about/leadership/"
+                >Chancellor and Campus Leadership</a
+              >
+              <nav
+                aria-label="Chancellor and Campus Leadership"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/about/leadership/meet/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/about/leadership/meet/"
+                      >Meet Our Leadership</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/about/leadership/updates/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/about/leadership/updates/"
+                      >Chancellor Updates</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/about/leadership/request-appearance"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/about/leadership/request-appearance.html"
+                      >Request an Appearance</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="about/history"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/about/history/"
+                >History</a
+              >
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="about/strategic-plan"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/about/strategic-plan/"
+                >Strategic Plan</a
+              >
+              <nav
+                aria-label="Strategic Plan"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/about/strategic-plan/goals/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/about/strategic-plan/goals/"
+                      >Goals</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              aria-hidden="true"
+              data-secondary-nav-path="about/honors-awards"
+              hidden=""
+            >
+              <a
+                class="rvt-header-local__title rvt-ts-16 rvt-c-header-local__title"
+                href="/about/honors-awards/"
+                >Honors and Awards</a
+              >
+              <nav
+                aria-label="Honors and Awards"
+                class="rvt-header-menu rvt-c-header-menu"
+              >
+                <ul class="rvt-header-menu__list rvt-c-header-menu__list">
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/about/honors-awards/chancellors-medallion/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/about/honors-awards/chancellors-medallion/"
+                      >Chancellor’s Medallion</a
+                    >
+                  </li>
+                  <li
+                    class="rvt-header-menu__item rvt-c-header-menu__item"
+                    data-secondnav-path="/about/honors-awards/student-awards/"
+                  >
+                    <a
+                      class="rvt-header-menu__link rvt-c-header-menu__link"
+                      href="/about/honors-awards/student-awards/"
+                      >Student Awards</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      class="video"
+      style="height: 50%; width: 100%; background-color: #f9f9f9"
+    ></div>
+
+    <div
+      class="rvt-flex rvt-flex-column rvt-align-items-center rvt-justify-center"
+      style="width: 70%; justify-self: center"
+    >
+      <div
+        class="rvt-p-top-xl rvt-flex rvt-flex-column rvt-align-items-center rvt-justify-center"
+      >
+        <h2 class="rvt-m-left-xl rvt-ts-xxl rvt-text-bold rvt-color-crimson">
+          Preparing you for what's next
+        </h2>
+        <p class="rvt-m-bottom-lg rvt-m-lr-xl rvt-ts-sm">
+          The Division of Student Affairs exists to support you in your college
+          journey—wherever it takes you. Whether you are looking to gain
+          leadership skills, focus on your well-being, work on campus, or simply
+          have a blast, we are here each step of the way. <br /><br />All nine
+          of our student-focused units care about your success. We’re here to
+          help when you need it most and cheer you on as you reach your goals.
+          Helping you find your version of success is one of our top priorities.
+        </p>
+      </div>
+      <div
+        class="rvt-flex rvt-bg-crimson rvt-flex-column rvt-align-items-center rvt-justify-center"
+      >
+        <div
+          class="rvt-row rvt-flex rvt-bg-crimson rvt-justify-space-evenly rvt-m-left-none rvt-m-right-none rvt-c-stat-group"
+          id="stat-group"
+        >
+          <div
+            class="rvt-cols-6-md rvt-bg-crimson rvt-cols-3-lg rvt-p-left-none rvt-p-right-none"
+          >
+            <div class="rvt-stat rvt-bg-crimson rvt-bg-crimson">
+              <div class="rvt-stat__content [ rvt-flow ] rvt-bg-crimson">
+                <div class="rvt-stat__image">
+                  <rvt-sticker name="cap" theme="white" size="sm"></rvt-sticker>
+                </div>
+                <div
+                  class="rvt-stat__number rvt-text-bold rvt-c-text-monospace rvt-color-white"
+                >
+                  325+
+                </div>
+                <div
+                  class="rvt-text-uppercase rvt-stat__description rvt-c-text-monospace rvt-color-white"
+                >
+                  Student organizations
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="rvt-cols-6-md rvt-cols-3-lg rvt-p-left-none rvt-p-right-none"
+          >
+            <div class="rvt-stat rvt-bg-crimson">
+              <div class="rvt-stat__content [ rvt-flow ]">
+                <div class="rvt-stat__image">
+                  <rvt-sticker
+                    name="group"
+                    theme="white"
+                    size="sm"
+                  ></rvt-sticker>
+                </div>
+                <div
+                  class="rvt-stat__number rvt-text-bold rvt-c-text-monospace rvt-color-white"
+                >
+                  23
+                </div>
+                <div
+                  class="rvt-stat__description rvt-text-uppercase rvt-c-text-monospace rvt-color-white"
+                >
+                  fraternity and sorority chapters
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="rvt-cols-6-md rvt-cols-3-lg rvt-p-left-none rvt-p-right-none"
+          >
+            <div class="rvt-stat rvt-bg-crimson">
+              <div class="rvt-stat__content [ rvt-flow ]">
+                <div class="rvt-stat__image">
+                  <rvt-sticker
+                    name="briefcase"
+                    theme="white"
+                    size="sm"
+                  ></rvt-sticker>
+                </div>
+                <div
+                  class="rvt-stat__number rvt-text-bold rvt-c-text-monospace rvt-color-white"
+                >
+                  100+
+                </div>
+                <div
+                  class="rvt-text-uppercase rvt-stat__description rvt-c-text-monospace rvt-color-white"
+                >
+                  student employment and internship opportunities
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button">Discover your spot</div>
+      </div>
+      <div class="rvt-flex rvt-flex-column">
+        <h2
+          class="rvt-m-left-xl rvt-m-top-xxl rvt-ts-xxl rvt-text-bold rvt-color-crimson"
+        >
+          Dive into campus life and keep the learning going
+        </h2>
+        <div class="rvt-flex">
+          <img src="/leadership.png" alt="" style="width: 50%" />
+          <div class="rvt-m-top-lg">
+            <h3
+              class="rvt-m-bottom-lg rvt-m-lr-xl rvt-ts-sm rvt-text-bold rvt-ts-lg"
+            >
+              Leadership
+            </h3>
+            <p class="rvt-m-bottom-lg rvt-m-lr-xl rvt-ts-sm">
+              Get the skills you need to take charge and lead the way. With more
+              than 300 student organizations, you can gain experience leading,
+              advocating, collaborating, and more. You can choose organizations
+              related to your major, or ones you want to join for fun.
+            </p>
+            <div class="rvt-m-bottom-lg rvt-m-lr-xl button button-alt">
+              Explore orgs in The Spot
+            </div>
+          </div>
+        </div>
+        <div class="rvt-flex">
+          <div class="rvt-m-top-lg">
+            <h3
+              class="rvt-m-bottom-lg rvt-m-lr-xl rvt-ts-sm rvt-text-bold rvt-ts-lg"
+            >
+              Wellness
+            </h3>
+            <p class="rvt-m-bottom-lg rvt-m-lr-xl rvt-ts-sm">
+              Learn how to take care of your mental, physical, and emotional
+              health. With our on-campus medical clinic, professional mental
+              health counseling center, and health and wellness education
+              programs, your well-being can remain a top priority.
+            </p>
+            <div class="rvt-m-bottom-lg rvt-m-lr-xl button button-alt">
+              Stay well
+            </div>
+          </div>
+          <img src="/wellness.png" alt="" style="width: 50%" />
+        </div>
+        <div class="rvt-flex">
+          <img src="/teamwork.png" alt="" style="width: 50%" />
+          <div class="rvt-m-top-lg">
+            <h3
+              class="rvt-m-bottom-lg rvt-m-lr-xl rvt-ts-sm rvt-text-bold rvt-ts-lg"
+            >
+              Advocacy
+            </h3>
+            <p class="rvt-m-bottom-lg rvt-m-lr-xl rvt-ts-sm">
+              Learn how to speak up for yourself and others. Engage in our
+              democracy through political engagement programs, join student
+              government to work with campus administrators to tackle important
+              student issues, or volunteer with Paws’ Pantry, IU Indianapolis’s
+              on-campus food pantry.
+            </p>
+            <div class="rvt-m-bottom-lg rvt-m-lr-xl button button-alt">
+              Use your voice
+            </div>
+          </div>
+        </div>
+        <div class="rvt-flex rvt-flex-column">
+          <h2
+            class="rvt-m-tb-xxl rvt-ts-xxl rvt-text-bold rvt-color-crimson rvt-text-center"
+          >
+            What's new at DoSA
+          </h2>
+        </div>
+
+        <div class="rvt-card rvt-card--horizontal rvt-m-bottom-xl">
+          <div class="rvt-card__image">
+            <img src="/guy.jpg" alt="" />
+          </div>
+          <div class="rvt-card__body">
+            <h2 class="rvt-card__title">
+              <a class="rvt-ts-md rvt-color-blue" href="#"
+                >A podcast for students, by a student: Inside Darius Lewis’
+                college journey</a
+              >
+            </h2>
+            <div class="rvt-card__content">
+              <p>
+                With humor and honesty, senior Darius Lewis helps students
+                navigate college through his podcast.
+              </p>
+            </div>
+            <div class="rvt-card__meta">
+              <time>Friday, April 18, 2025 </time>
+            </div>
+          </div>
+        </div>
+        <div class="rvt-card rvt-card--horizontal rvt-m-bottom-xl">
+          <div class="rvt-card__image">
+            <img src="/guy.jpg" alt="" />
+          </div>
+          <div class="rvt-card__body">
+            <h2 class="rvt-card__title">
+              <a class="rvt-ts-md rvt-color-blue" href="#"
+                >A podcast for students, by a student: Inside Darius Lewis’
+                college journey</a
+              >
+            </h2>
+            <div class="rvt-card__content">
+              <p>
+                With humor and honesty, senior Darius Lewis helps students
+                navigate college through his podcast.
+              </p>
+            </div>
+            <div class="rvt-card__meta">
+              <time>Friday, April 18, 2025 </time>
+            </div>
+          </div>
+        </div>
+        <div class="rvt-card rvt-card--horizontal rvt-m-bottom-xl">
+          <div class="rvt-card__image">
+            <img src="/guy.jpg" alt="" />
+          </div>
+          <div class="rvt-card__body">
+            <h2 class="rvt-card__title">
+              <a class="rvt-ts-md rvt-color-blue" href="#"
+                >A podcast for students, by a student: Inside Darius Lewis’
+                college journey</a
+              >
+            </h2>
+            <div class="rvt-card__content">
+              <p>
+                With humor and honesty, senior Darius Lewis helps students
+                navigate college through his podcast.
+              </p>
+            </div>
+            <div class="rvt-card__meta">
+              <time>Friday, April 18, 2025 </time>
+            </div>
+          </div>
+        </div>
+
+        <h2
+        class="rvt-m-tb-xxl rvt-ts-xxl rvt-text-bold rvt-color-crimson rvt-text-center">
+        DoSA on Social Media
+      </h2>
+      <div class="rvt-flex rvt-justify-center rvt-p-bottom-lg" style="width: 100%;">
+      <iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/iuiwellness/embed/?cr=1&amp;v=14&amp;wp=498&amp;rd=https%3A%2F%2Fstudentaffairs.indianapolis.iu.edu&amp;rp=%2F#%7B%22ci%22%3A0%2C%22os%22%3A324.90000009536743%2C%22ls%22%3A134.40000009536743%2C%22le%22%3A305.69999980926514%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="555" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white; max-width: 540px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe>
+      <iframe class="instagram-media instagram-media-rendered" id="instagram-embed-1" src="https://www.instagram.com/iuistudentaffairs/embed/?cr=1&amp;v=14&amp;wp=498&amp;rd=https%3A%2F%2Fstudentaffairs.indianapolis.iu.edu&amp;rp=%2F#%7B%22ci%22%3A1%2C%22os%22%3A328.59999990463257%2C%22ls%22%3A134.40000009536743%2C%22le%22%3A305.69999980926514%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="555" data-instgrm-payload-id="instagram-media-payload-1" scrolling="no" style="background: white; max-width: 540px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe>  
+    </div>
+    </div>
+    </div>
+
+    <script src="https://unpkg.com/rivet-core@2.9.0/js/rivet.min.js"></script>
+    <script>
+      Rivet.init();
+    </script>
+  </body>
+</html>
